@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Quiz</title>
+</head>
+<body>
+    <div id="start" class="start__page">
+        <p class="start__page__text">Start the Quiz</p>
+        <button id="start-btn" class="btn">Start</button>
+    </div>
+    <div class="question bg-box hide" id="q-1">
+        <div class="top-box"> 
+            <div id="title"></div>
+            <div class="score">
+                <img src='./src/assets/dollar.png'/>
+                <p id="score" class="score__text"></p>
+            </div>
+        </div>
+        <div id="answer-buttons" class="answers"></div>
+        <div class="question__next"><button class="unvisible next-btn" id="next-button">Next</button></div>
+    </div>
+    <div id="final-score" class="hide bg-box final-score-box">
+        <div class=" final-score-box__top">
+            <img src='./src/assets/dollar.png' />
+            <p id="finalscoretext" class="final-score-text"></p>
+        </div>
+        <button id="goHome" class="next-btn">Finish</button>
+    </div>
+    <script src="./src/index.js"></script>
+</body>
+</html>
